@@ -1,0 +1,22 @@
+<!--
+    * By Martin Chamarro for ASOS
+    * Copyright 2018 Martin Chamarro (@martinchamarro)
+-->
+<resources>
+    <string name="app_name">Recipes</string>
+
+    <!-- Home -->
+    <string name="recipe_item_ingredients">%d ingredients</string>
+    <string name="recipe_item_minutes">%d minutes</string>
+    <string name="search_input_hint">Search text...</string>
+
+    <!-- Empty recipes -->
+    <string name="empty_recipes_title">Recipes not found</string>
+    <string name="empty_recipes_subtitle">Try a different search or change the filters</string>
+
+    <!-- Detail -->
+    <string name="detail_ingredients">Ingredients (%d)</string>
+    <string name="detail_instructions">Instructions</string>
+    <string name="detail_step">Step %d: %s</string>
+
+</resources>

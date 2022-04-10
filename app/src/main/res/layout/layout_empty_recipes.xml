@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    * By Martin Chamarro for ASOS
+    * Copyright 2018 Martin Chamarro (@martinchamarro)
+-->
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lime">
+
+    <ImageView
+        android:id="@+id/emptyLogoView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/emptyTitleView"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/ic_empty_recipes"/>
+
+    <TextView
+        android:id="@+id/emptyTitleView"
+        style="@style/EmptyViewTitleStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="@dimen/normal_margin"
+        android:gravity="center"
+        android:text="@string/empty_recipes_title" />
+
+    <TextView
+        android:id="@+id/emptySubtitleView"
+        style="@style/EmptyViewSubtitleStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/emptyTitleView"
+        android:gravity="center"
+        android:padding="@dimen/normal_padding"
+        android:text="@string/empty_recipes_subtitle" />
+
+</RelativeLayout>

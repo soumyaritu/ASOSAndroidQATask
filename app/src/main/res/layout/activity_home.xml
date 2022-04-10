@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    * By Martin Chamarro for ASOS
+    * Copyright 2018 Martin Chamarro (@martinchamarro)
+-->
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:id="@+id/searchWrapper"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/tomato"
+        android:padding="@dimen/normal_padding">
+
+        <EditText
+            android:id="@+id/searchInput"
+            style="@style/SearchEditTextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_search"
+            android:hint="@string/search_input_hint"
+            android:padding="@dimen/small_padding"/>
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/filtersWrapper"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/searchWrapper"
+        android:background="@color/tomato"
+        android:orientation="horizontal"
+        android:padding="@dimen/small_padding">
+
+        <com.asos.recipes.presentation.ui.home.views.DifficultySpinner
+            android:id="@+id/difficultySpinner"
+            android:layout_width="wrap_content"
+            android:layout_height="8dp"
+            android:backgroundTint="@color/white" />
+
+        <com.asos.recipes.presentation.ui.home.views.PreparationTimeSpinner
+            android:id="@+id/preparationTimeSpinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/white" />
+
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recipesRecycler"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/filtersWrapper"
+        android:clipToPadding="false"
+        android:padding="@dimen/recipe_item_spacing"/>
+
+    <include
+        android:id="@+id/loading"
+        layout="@layout/layout_loading"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/filtersWrapper"
+        android:visibility="gone"/>
+
+    <include
+        android:id="@+id/emptyView"
+        layout="@layout/layout_empty_recipes"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/filtersWrapper"
+        android:visibility="gone"/>
+
+
+</RelativeLayout>

@@ -1,0 +1,107 @@
+<!--
+    * By Martin Chamarro for ASOS
+    * Copyright 2018 Martin Chamarro (@martinchamarro)
+-->
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="android:windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+    <style name="AppTheme.NoActionBar.TransparentStatus">
+        <item name="android:windowTranslucentStatus">true</item>
+    </style>
+
+    <!-- Toolbar -->
+    <style name="AppTheme.Toolbar" parent="ThemeOverlay.AppCompat.ActionBar">
+        <item name="titleTextAppearance">@style/AppTheme.Title</item>
+        <item name="android:background">@color/tomato</item>
+    </style>
+    <style name="AppTheme.Title" parent="TextAppearance.Widget.AppCompat.Toolbar.Title">
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <!-- Home -->
+    <style name="SearchEditTextStyle" parent="Widget.AppCompat.EditText">
+        <item name="android:textCursorDrawable">@drawable/search_cursor</item>
+        <item name="android:textColor">@color/charcoal</item>
+        <item name="android:textColorHint">@color/ash</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+    <style name="SpinnerItemStyle">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:ellipsize">marquee</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <!-- Recipe item -->
+    <style name="RecipeItemTitleStyle">
+        <item name="android:textColor">@color/vanta</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:ellipsize">end</item>
+    </style>
+    <style name="RecipeItemPropertyStyle">
+        <item name="android:textColor">@color/concrete</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <!-- Empty view -->
+    <style name="EmptyViewTitleStyle">
+        <item name="android:textColor">@color/ash</item>
+        <item name="android:textSize">22sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="EmptyViewSubtitleStyle">
+        <item name="android:textColor">@color/ash</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <!-- Detail -->
+    <style name="AppTheme.Detail" parent="AppTheme.NoActionBar">
+        <!-- Empty for SDK_INT < 21-->
+    </style>
+    <style name="AppTheme.AppBarExpanded">
+        <item name="android:textSize">0sp</item>
+        <item name="android:textColor">@android:color/transparent</item>
+    </style>
+    <style name="AppTheme.AppBarCollapsed">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+    <style name="DetailTitleStyle">
+        <item name="android:textColor">@color/vanta</item>
+        <item name="android:textSize">24sp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="DetailPropertyStyle">
+        <item name="android:textColor">@color/charcoal</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="DetailIngredientNameStyle">
+        <item name="android:textColor">@color/concrete</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+    <style name="DetailIngredientQuantityStyle">
+        <item name="android:textColor">@color/tomato</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+    <style name="DetailInstructionStyle">
+        <item name="android:textColor">@color/concrete</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:padding">@dimen/small_padding</item>
+    </style>
+
+</resources>

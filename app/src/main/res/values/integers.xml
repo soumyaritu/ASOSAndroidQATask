@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    * By Martin Chamarro for ASOS
+    * Copyright 2018 Martin Chamarro (@martinchamarro)
+-->
+<resources>
+    <!-- Home -->
+    <integer name="recipes_grid_columns">2</integer>
+</resources>

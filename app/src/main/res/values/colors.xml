@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    * By Martin Chamarro for ASOS
+    * Copyright 2018 Martin Chamarro (@martinchamarro)
+-->
+<resources>
+
+    <color name="colorPrimary">@color/tomato</color>
+    <color name="colorPrimaryDark">@color/strawberry</color>
+    <color name="colorAccent">@color/amber</color>
+
+    <color name="strawberry">#D03D32</color>
+    <color name="tomato">#F44336</color>
+    <color name="amber">#FFc107</color>
+    <color name="vanta">#222123</color>
+    <color name="charcoal">#363537</color>
+    <color name="concrete">#666666</color>
+    <color name="ash">#9A9A9A</color>
+    <color name="silver">#D5D5D5</color>
+    <color name="lime">#F3F4F0</color>
+    <color name="white">#FFFFFF</color>
+
+    <color name="detail_statusbar_color">#19000000</color>
+
+</resources>

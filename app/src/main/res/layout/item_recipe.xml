@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    * By Martin Chamarro for ASOS
+    * Copyright 2018 Martin Chamarro (@martinchamarro)
+-->
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="@dimen/recipe_item_corner_radius"
+    app:cardUseCompatPadding="true"
+    tools:layout_width="150dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:paddingBottom="@dimen/small_padding">
+
+        <ImageView
+            android:id="@+id/pictureView"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/recipe_item_picture_height"
+            android:background="@color/silver"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_default_picture" />
+
+        <TextView
+            android:id="@+id/titleView"
+            style="@style/RecipeItemTitleStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/pictureView"
+            android:layout_marginLeft="@dimen/small_margin"
+            android:layout_marginTop="@dimen/small_margin"
+            android:layout_marginRight="@dimen/small_margin"
+            tools:text="Crock Pot Roast" />
+
+        <TextView
+            android:id="@+id/ingredientsView"
+            style="@style/RecipeItemPropertyStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/titleView"
+            android:layout_marginLeft="@dimen/small_margin"
+            android:layout_marginRight="@dimen/small_margin"
+            android:layout_marginTop="@dimen/small_margin"
+            tools:text="5 ingredients"/>
+
+        <TextView
+            android:id="@+id/minutesView"
+            style="@style/RecipeItemPropertyStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ingredientsView"
+            android:layout_marginLeft="@dimen/small_margin"
+            android:layout_marginTop="@dimen/small_margin"
+            android:layout_marginRight="@dimen/small_margin"
+            tools:text="120 minutes" />
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>

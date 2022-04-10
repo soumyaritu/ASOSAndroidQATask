@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    * By Martin Chamarro for ASOS
+    * Copyright 2018 Martin Chamarro (@martinchamarro)
+-->
+<resources>
+
+    <string-array name="recipe_difficulties">
+        <item>Cualquier dificultad</item>
+        <item>Fácil</item>
+        <item>Media</item>
+        <item>Alta</item>
+    </string-array>
+
+    <string-array name="recipe_preparation_times">
+        <item>Cualquier tiempo</item>
+        <item>0-30 mins</item>
+        <item>30-60 mins</item>
+        <item>60+ mins</item>
+    </string-array>
+
+</resources>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    * By Martin Chamarro for ASOS
+    * Copyright 2018 Martin Chamarro (@martinchamarro)
+-->
+<ProgressBar
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/toolbarProgress"
+    android:layout_width="@dimen/toolbar_progress_size"
+    android:layout_height="@dimen/toolbar_progress_size"
+    android:layout_gravity="right"
+    android:indeterminate="true"
+    android:indeterminateTint="@color/white"
+    android:indeterminateTintMode="src_in"
+    android:visibility="gone"
+    tools:visibility="visible"/>

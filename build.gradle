@@ -1,0 +1,57 @@
+/*
+ * By Martin Chamarro for ASOS
+ * Copyright 2018 Martin Chamarro (@martinchamarro)
+ */
+
+apply from: 'dependencies.gradle'
+apply plugin: "com.github.ben-manes.versions"
+
+buildscript {
+    ext.kotlinVersion = '1.6.10'
+    repositories {
+        google()
+        mavenCentral()
+        gradlePluginPortal()
+        maven { url 'https://maven.google.com' }
+        maven { url "https://plugins.gradle.org/m2/" }
+        maven { url 'https://jitpack.io' }
+        maven { url "https://oss.jfrog.org/libs-snapshot" }
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:7.1.2'
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlinVersion"
+        classpath 'com.github.ben-manes:gradle-versions-plugin:0.39.0'
+    }
+}
+
+allprojects {
+    repositories {
+        google()
+        mavenCentral()
+        gradlePluginPortal()
+        maven { url 'https://maven.google.com' }
+        maven { url "https://plugins.gradle.org/m2/" }
+        maven { url 'https://jitpack.io' }
+        maven { url "https://oss.jfrog.org/libs-snapshot" }
+    }
+}
+
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}
+
+task startDebug(type: Exec, dependsOn: ':app:installDebug') {
+    def adb = "$System.env.ANDROID_HOME/platform-tools/adb"
+    commandLine "$adb", 'shell', 'am', 'start', '-n', 'com.asos.recipes.debug/com.asos.recipes.presentation.ui.splash.SplashActivity'
+}
+
+def isNonStable = { String version ->
+    return ['ALPHA', 'BETA', 'RC', 'M1'].any { it -> version.toUpperCase().contains(it) }
+}
+
+tasks.named("dependencyUpdates").configure {
+    rejectVersionIf {
+        isNonStable(it.candidate.version)
+    }
+}

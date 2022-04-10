@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    * By Martin Chamarro for ASOS
+    * Copyright 2018 Martin Chamarro (@martinchamarro)
+-->
+<resources>
+
+    <!-- Common dimens -->
+    <dimen name="big_margin">24dp</dimen>
+    <dimen name="normal_margin">16dp</dimen>
+    <dimen name="small_margin">8dp</dimen>
+    <dimen name="big_padding">24dp</dimen>
+    <dimen name="normal_padding">16dp</dimen>
+    <dimen name="small_padding">8dp</dimen>
+    <dimen name="toolbar_progress_size">32dp</dimen>
+    <dimen name="divider_height">0.5dp</dimen>
+
+    <!-- Home -->
+    <dimen name="search_input_corners">5dp</dimen>
+    <dimen name="recipe_item_spacing">4dp</dimen>
+    <dimen name="recipe_item_picture_height">150dp</dimen>
+    <dimen name="recipe_item_corner_radius">5dp</dimen>
+
+    <!-- Empty view -->
+    <dimen name="empty_logo_top_margin">100dp</dimen>
+
+    <!-- Detail -->
+    <dimen name="detail_picture_height">250dp</dimen>
+
+</resources>
